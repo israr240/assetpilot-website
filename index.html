@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AssetPilot | Unity Tools & Game Templates</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <style>
+    body {
+      background-color: #0d0d0d;
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="bg-black border-b border-gray-800 shadow-lg sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 py-5 flex items-center justify-between">
+    <!-- Logo & Brand -->
+    <div class="flex items-center gap-3">
+  <a href="index.html">
+    <img src="images/logo.png" alt="AssetPilot Logo" class="h-10 w-10" />
+  </a>
+  <h1 class="text-2xl font-bold text-white">AssetPilot</h1>
+</div>
+
+
+    <!-- Navigation -->
+    <nav class="hidden md:flex items-center space-x-8">
+      <a href="#tools" class="text-gray-300 hover:text-white transition">Templates</a>
+      <!-- <a href="#tools" class="text-gray-300 hover:text-white transition">Tools</a> -->
+      <a href="#contact" class="text-gray-300 hover:text-white transition">Contact Us</a>
+    </nav>
+
+    <!-- Tagline -->
+    <!-- <span class="text-gray-400 text-sm hidden md:block">Unity Tools & Game Templates</span> -->
+  </div>
+</header>
+
+
+  <!-- Hero Slider -->
+<section class="bg-gray-900 py-16 px-4">
+  <div class="swiper heroSwiper max-w-4xl mx-auto text-center">
+    <div class="swiper-wrapper">
+      <!-- Slide 1 -->
+      <div class="swiper-slide">
+        <h2 class="text-4xl font-extrabold mb-4 text-white">Build Faster with AssetPilot</h2>
+        <p class="text-gray-400">Premium Unity templates and tools for 3D games and system-based development.</p>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="swiper-slide">
+        <h2 class="text-4xl font-extrabold mb-4 text-white">Game Templates Ready to Deploy</h2>
+        <p class="text-gray-400">Fully functional Unity game templates designed for quick launches and fast customization.</p>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="swiper-slide">
+        <h2 class="text-4xl font-extrabold mb-4 text-white">Editor Tools for Smart Development</h2>
+        <p class="text-gray-400">Boost your workflow with drag-and-drop tools, level managers, path systems, and more.</p>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="swiper-slide">
+        <h2 class="text-4xl font-extrabold mb-4 text-white">Made for Indie Devs and Teams</h2>
+        <p class="text-gray-400">Everything you need to start faster, iterate better, and publish sooner in Unity.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Featured Assets -->
+  <section id="tools" class="bg-gray-950 py-14 px-6">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-3xl font-bold mb-10 text-center">Featured Assets</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-gray-900 rounded-lg shadow hover:shadow-xl transition">
+          <img src="images/bridge.jpg" class="w-full h-48 object-cover rounded-t-lg" />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold">3D Object Washer</h3>
+            <p class="text-gray-400 text-sm mt-1">Wash any object dirt texture with clean texture (Mobile-optimzed).</p>
+          </div>
+        </div>
+        <div class="bg-gray-900 rounded-lg shadow hover:shadow-xl transition">
+          <img src="images/bus-sim-template.png" class="w-full h-48 object-cover rounded-t-lg" />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold">Bus Simulator Template</h3>
+            <p class="text-gray-400 text-sm mt-1">Complete game logic with UI, routes, indicators, and AI traffic.</p>
+          </div>
+        </div>
+        <div class="bg-gray-900 rounded-lg shadow hover:shadow-xl transition">
+          <img src="images/bridge.jpg" class="w-full h-48 object-cover rounded-t-lg" />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold">Vehicle Changer Bridge Runner</h3>
+            <p class="text-gray-400 text-sm mt-1">Mobile-friendly Vehicle Changer Bridge Runner Template.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Slider -->
+<section class="py-14 bg-black">
+  <div class="max-w-5xl mx-auto px-4">
+    <h2 class="text-2xl text-white font-bold mb-6 text-center">Gallery Preview</h2>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="images/preview1.jpg" class="rounded-lg shadow w-full h-[500px] object-cover" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/preview2.png" class="rounded-lg shadow w-full h-[500px] object-cover" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/preview3.jpg" class="rounded-lg shadow w-full h-[500px] object-cover" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/preview4.png" class="rounded-lg shadow w-full h-[500px] object-cover" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  
+
+  <!-- Swiper Script -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    new Swiper(".mySwiper", {
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      spaceBetween: 20,
+      slidesPerView: 1,
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  const heroSwiper = new Swiper('.heroSwiper', {
+    loop: true,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    effect: 'fade',
+    fadeEffect: { crossFade: true },
+  });
+</script>
+
+  <!-- Contact Us -->
+<section id="contact" class="bg-gray-950 py-14 px-4">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-6 text-white">Contact Us</h2>
+    <p class="text-gray-400 mb-8">
+      Got questions, collaboration ideas, or asset support inquiries? Reach out to us.
+    </p>
+    <form action="mailto:yourname@email.com" method="POST" enctype="text/plain" class="max-w-xl mx-auto space-y-4">
+      <input type="text" name="name" placeholder="Your Name" required class="w-full px-4 py-2 bg-gray-800 text-white rounded border border-gray-700 focus:outline-none focus:ring-2 focus:ring-purple-600" />
+      <input type="email" name="email" placeholder="Your Email" required class="w-full px-4 py-2 bg-gray-800 text-white rounded border border-gray-700 focus:outline-none focus:ring-2 focus:ring-purple-600" />
+      <textarea name="message" placeholder="Your Message" rows="4" required class="w-full px-4 py-2 bg-gray-800 text-white rounded border border-gray-700 focus:outline-none focus:ring-2 focus:ring-purple-600"></textarea>
+      <button type="submit" class="bg-purple-600 hover:bg-purple-700 text-white font-semibold px-6 py-2 rounded shadow">Send Message</button>
+    </form>
+  </div>
+</section>
+<!-- Footer -->
+  <footer class="bg-gray-900 py-6 mt-10 border-t border-gray-800">
+    <div class="text-center text-gray-500 text-sm">
+      &copy; 2025 AssetPilot. All rights reserved.
+    </div>
+  </footer>
+</body>
+</html>
